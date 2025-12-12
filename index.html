@@ -31,7 +31,7 @@
         .card {
             width: 100%;
             max-width: 430px;
-            padding: 28px 22px 34px;
+            padding: 28px 22px 26px;
             background: rgba(10, 10, 10, 0.92);
             border-radius: 28px;
             border: 1px solid rgba(200, 150, 41, 0.25);
@@ -53,7 +53,7 @@
 
         .subtitle {
             color: var(--text-muted);
-            margin-bottom: 24px;
+            margin-bottom: 20px;
             font-size: 0.95rem;
         }
 
@@ -61,6 +61,7 @@
             display: flex;
             flex-direction: column;
             gap: 12px;
+            margin-bottom: 20px;
         }
 
         .btn-link {
@@ -73,6 +74,7 @@
             font-size: 1rem;
             font-weight: 500;
             transition: 0.2s;
+            background: rgba(0,0,0,0.65);
         }
 
         .btn-link:hover,
@@ -83,10 +85,62 @@
             box-shadow: 0 10px 24px rgba(0,0,0,0.7);
         }
 
-        .footer-note {
-            margin-top: 22px;
-            color: var(--text-muted);
+        /* ========= قسم المنتجات ========== */
+
+        .products-title {
+            margin: 4px 0 10px;
+            font-size: 0.95rem;
+            color: var(--gold);
+            font-weight: 600;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 10px;
+            margin-bottom: 14px;
+        }
+
+        .product-card {
+            background: rgba(15,15,15,0.95);
+            border-radius: 16px;
+            padding: 8px 6px 10px;
+            border: 1px solid rgba(200,150,41,0.35);
+            text-decoration: none;
+            color: var(--text-main);
             font-size: 0.8rem;
+            transition: 0.18s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 22px rgba(0,0,0,0.7);
+            border-color: var(--gold);
+        }
+
+        .product-card img {
+            width: 100%;
+            border-radius: 12px;
+            margin-bottom: 6px;
+            display: block;
+        }
+
+        .product-name {
+            font-weight: 500;
+            margin-bottom: 2px;
+        }
+
+        .product-price {
+            font-size: 0.78rem;
+            color: var(--text-muted);
+        }
+
+        /* ========= الفوتر ========== */
+
+        .footer-note {
+            margin-top: 10px;
+            color: var(--text-muted);
+            font-size: 0.78rem;
         }
     </style>
 </head>
@@ -101,27 +155,58 @@
         <p class="subtitle">اختر المنصة التي تريد الدخول عليها</p>
 
         <div class="links-list">
-
             <a class="btn-link" href="https://www.tiktok.com/@haroonkids0?_r=1&_t=ZM-928dRuXBUyK" target="_blank">
                 TikTok
             </a>
-
             <a class="btn-link" href="https://www.facebook.com/share/14T9SFUPRQV/?mibextid=wwXIfr" target="_blank">
                 Facebook
             </a>
-
             <a class="btn-link" href="https://www.instagram.com/haroonkids_brand?igsh=MW00OGl0eWFxNDM5YQ%3D%3D&utm_source=qr" target="_blank">
                 Instagram
             </a>
-
             <a class="btn-link" href="https://wa.me/218931364194" target="_blank">
                 WhatsApp
             </a>
-
             <a class="btn-link" href="https://maps.app.goo.gl/qvDd7aKYyYhruhTC6?g_st=ipc" target="_blank">
                 Google Maps
             </a>
+        </div>
 
+        <!-- 🔥 قسم المنتجات التجريبي -->
+        <p class="products-title">بعض من منتجات هارون كيدز</p>
+
+        <div class="products-grid">
+            <!-- منتج 1 -->
+            <a class="product-card"
+               href="https://wa.me/218931364194?text=مرحبا، أريد الاستفسار عن: فستان بناتي شتوي - Haroon Kids">
+                <img src="prod1.jpg" alt="فستان بناتي شتوي">
+                <div class="product-name">فستان بناتي شتوي</div>
+                <div class="product-price">مقاسات متعددة</div>
+            </a>
+
+            <!-- منتج 2 -->
+            <a class="product-card"
+               href="https://wa.me/218931364194?text=مرحبا، أريد الاستفسار عن: طقم أولادي كاجوال - Haroon Kids">
+                <img src="prod2.jpg" alt="طقم أولادي كاجوال">
+                <div class="product-name">طقم أولادي كاجوال</div>
+                <div class="product-price">ألوان متنوعة</div>
+            </a>
+
+            <!-- منتج 3 -->
+            <a class="product-card"
+               href="https://wa.me/218931364194?text=مرحبا، أريد الاستفسار عن: طقم مواليد - Haroon Kids">
+                <img src="prod3.jpg" alt="طقم مواليد">
+                <div class="product-name">طقم مواليد</div>
+                <div class="product-price">مناسب للهدايا</div>
+            </a>
+
+            <!-- منتج 4 -->
+            <a class="product-card"
+               href="https://wa.me/218931364194?text=مرحبا، أريد الاستفسار عن: ترينج أطفال - Haroon Kids">
+                <img src="prod4.jpg" alt="ترينج أطفال">
+                <div class="product-name">ترينج أطفال</div>
+                <div class="product-price">خامة مريحة</div>
+            </a>
         </div>
 
         <p class="footer-note">
